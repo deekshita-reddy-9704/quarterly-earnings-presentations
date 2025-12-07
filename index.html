@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Quarterly Earnings Report</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dist/reveal.css">
+  <link rel="stylesheet" href="dist/theme/black.css" id="theme">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <!-- Slide 1: Title -->
+      <section>
+        <h1>Quarterly Earnings Report</h1>
+        <p>Presented by: <strong>Deekshita Reddy</strong></p>
+        <p>Email: <strong>22f3000075@ds.study.iitm.ac.in</strong></p>
+      </section>
+
+      <!-- Slide 2: Markdown content -->
+      <section data-markdown>
+        <script type="text/template">
+## Revenue Overview
+
+- Total Revenue: $10M
+- YoY Growth: 12%
+- Key Drivers:
+  - Fragmented growth in retail
+  - Strong performance in digital banking
+
+*Note: Revenue values are projections.*
+        </script>
+      </section>
+
+      <!-- Slide 3: Animated fragments -->
+      <section>
+        <h2>Highlights</h2>
+        <ul>
+          <li class="fragment">Record-breaking quarterly revenue</li>
+          <li class="fragment">Expansion in international markets</li>
+          <li class="fragment">New strategic partnerships</li>
+        </ul>
+      </section>
+
+      <!-- Slide 4: Code sample -->
+      <section>
+        <h2>Sample Python Calculation</h2>
+        <pre><code class="python">
+# Calculate CAGR
+revenue_start = 5_000_000
+revenue_end = 10_000_000
+years = 3
+cagr = ((revenue_end / revenue_start)**(1/years)) - 1
+print(f"CAGR: {cagr:.2%}")
+        </code></pre>
+      </section>
+
+      <!-- Slide 5: Math formula -->
+      <section>
+        <h2>Financial Formula</h2>
+        <p>Net Present Value (NPV):</p>
+        <p>
+          $$NPV = \sum_{t=0}^{T} \frac{R_t}{(1+i)^t}$$
+        </p>
+      </section>
+
+      <!-- Slide 6: Speaker notes -->
+      <section data-markdown>
+        <script type="text/template">
+## Closing Remarks
+
+- Thank stakeholders for support
+- Emphasize growth strategy
+- Invite questions
+
+Note: Highlight the new partnerships visually during presentation
+        </script>
+      </section>
+    </div>
+  </div>
+
+  <script src="dist/reveal.js"></script>
+  <script src="plugin/markdown/markdown.js"></script>
+  <script src="plugin/highlight/highlight.js"></script>
+  <script src="plugin/math/math.js"></script>
+
+  <script>
+    Reveal.initialize({
+      hash: true,
+      plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX ]
+    });
+  </script>
+</body>
+</html>
