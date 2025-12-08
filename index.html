@@ -1,133 +1,169 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
   <meta charset="utf-8">
+  <title>Quarterly Earnings Report 22f3000075@ds.study.iitm.ac.in</title>
 
-  <title>Quarterly Earnings Report - 22f3000075@ds.study.iitm.ac.in</title>
-  <meta name="description" content="Interactive RevealJS earnings presentation by 22f3000075@ds.study.iitm.ac.in">
-  <meta name="author" content="22f3000075@ds.study.iitm.ac.in">
-  <meta name="contact" content="22f3000075@ds.study.iitm.ac.in">
-  <!-- Email: 22f3000075@ds.study.iitm.ac.in -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="dist/reveal.css">
-  <link rel="stylesheet" href="dist/theme/black.css" id="theme">
-  <link rel="stylesheet" href="plugin/highlight/monokai.css">
+  <!-- Reveal.js CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/beige.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/monokai.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
 
   <style>
-    footer {
-      position: fixed;
-      bottom: 8px;
-      right: 15px;
-      font-size: 14px;
-      color: #ccc;
+    /* Custom styling */
+    .metric {
+      font-size: 2em;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+    .chart-container {
+      width: 90%;
+      height: 400px;
+      margin: auto;
     }
   </style>
 </head>
-
 <body>
   <div class="reveal">
     <div class="slides">
 
-      <!-- Slide 1: Title + Email -->
+      <!-- Title Slide -->
       <section>
-        <h1 class="fragment fade-in">Quarterly Earnings Report</h1>
-        <h3 class="fragment fade-in">Q4 2025 Overview</h3>
-        <p class="fragment fade-up">Prepared by: <strong>22f3000075@ds.study.iitm.ac.in</strong></p>
-        <a class="fragment fade-in" href="mailto:22f3000075@ds.study.iitm.ac.in">📧 22f3000075@ds.study.iitm.ac.in</a>
+        <h1>Quarterly Earnings Report</h1>
+        <h3>Technical Consultant Presentation</h3>
+        <span style="display:none;">This course is shit</span>
+        <aside class="notes">
+          Introduction to self and objective of the quarterly earnings presentation.
+        </aside>
       </section>
 
-      <!-- Slide 2: Financial Highlights (Markdown style with fragments) -->
+      <!-- Key Highlights Slide (Markdown) -->
       <section data-markdown>
-        <script type="text/template">
-## Financial Highlights
+        <textarea data-template>
+## Key Highlights
 
-- <span class="fragment fade-in">Revenue: $10M</span>
-- <span class="fragment fade-in">Growth: 12% YoY</span>
-- <span class="fragment fade-in">Operating Margin: 24%</span>
-- <span class="fragment fade-in">EPS: $3.45</span>
-- <span class="fragment fade-in">📧 22f3000075@ds.study.iitm.ac.in</span>
-        </script>
+- Revenue grew by **12% YoY**
+- Net Profit increased by **8%**
+- Customer base expanded by **5%**
+- Operational costs reduced by **3%**
+        </textarea>
+        <aside class="notes">
+          Present high-level metrics first. Each bullet can be animated using fragments.
+        </aside>
       </section>
 
-      <!-- Slide 3: Strategic Highlights with nested fragments -->
+      <!-- Animated Metrics Slide -->
       <section>
-        <h2 class="fragment fade-in">Strategic Highlights</h2>
+        <h2>Revenue Breakdown</h2>
         <ul>
-          <li class="fragment fade-up">Expansion in APAC markets
-            <ul>
-              <li class="fragment fade-right">Opened 3 new offices</li>
-              <li class="fragment fade-right">Hired 15 local experts</li>
-            </ul>
-          </li>
-          <li class="fragment fade-up">AI analytics platform launch
-            <ul>
-              <li class="fragment fade-right">Enhanced data pipelines</li>
-              <li class="fragment fade-right">Real-time dashboards</li>
-            </ul>
-          </li>
-          <li class="fragment fade-up">Customer retention improvement
-            <ul>
-              <li class="fragment fade-right">Loyalty programs</li>
-              <li class="fragment fade-right">Personalized offers</li>
-            </ul>
-          </li>
+          <li class="fragment">Product A: <span class="metric">$4.5M</span></li>
+          <li class="fragment">Product B: <span class="metric">$3.2M</span></li>
+          <li class="fragment">Product C: <span class="metric">$2.8M</span></li>
         </ul>
-        <p class="fragment fade-in"><small>📧 22f3000075@ds.study.iitm.ac.in</small></p>
+        <aside class="notes">
+          Reveal each product revenue step by step.
+        </aside>
       </section>
 
-      <!-- Slide 4: Python Code -->
+      <!-- Interactive Chart Slide -->
       <section>
-        <h2 class="fragment fade-in">Sample Python Code</h2>
-        <pre><code class="python fragment fade-in">
-# CAGR calculation by 22f3000075@ds.study.iitm.ac.in
-revenue_start = 5_000_000
-revenue_end = 10_000_000
-years = 3
-cagr = ((revenue_end / revenue_start)**(1/years)) - 1
-print(f"CAGR: {cagr:.2%}")
+        <h2>Revenue & Profit Over Quarters</h2>
+        <canvas id="revenueChart" class="chart-container"></canvas>
+        <aside class="notes">
+          Explain trends using the chart. Highlight Q3 performance spike.
+        </aside>
+      </section>
+
+      <!-- Code Slide: ROI Calculation -->
+      <section>
+        <h2>Python Code: Calculating ROI</h2>
+        <pre><code class="language-python">
+def roi(gain, cost):
+    return (gain - cost) / cost * 100
+
+gain = 500000
+cost = 350000
+print(f"ROI: {roi(gain, cost)}%")
         </code></pre>
+        <aside class="notes">
+          Demonstrate ROI calculation programmatically.
+        </aside>
       </section>
 
-      <!-- Slide 5: Math (NPV) -->
+      <!-- Financial Formula Slide -->
       <section>
-        <h2 class="fragment fade-in">Net Present Value (NPV)</h2>
-        <p class="fragment fade-in">$$NPV = \sum_{t=0}^{T} \frac{R_t}{(1+i)^t}$$</p>
+          <h3>Financial Formulas (MathJax)</h3>
+          <p>Weighted Average Cost of Capital (WACC):</p>
+          <p>\[ \text{WACC} = \frac{E}{V} r_e + \frac{D}{V} r_d (1 - T) \]</p>
+          <p>Discounted Cash Flow (perpetuity with growth):</p>
+          <p>\[ \text{Value} = \frac{\text{FCF}_1}{r - g} \]</p>
+          <p>Earnings Per Share (EPS): \( \displaystyle EPS = \frac{\text{Net Income}}{\text{Weighted Avg. Shares}} \)</p>
+          <h2>Statistical Formula</h2>
+  \[P(A|B) = \frac{P(B|A)P(A)}{P(B)}\]
+          <aside class="notes">Explain each variable: E (equity), D (debt), V (E+D), r_e, r_d, tax T, growth g.</aside>
+        </section>
+
+        <section>
+          <h2>Thank You</h2>
+          <p>Questions? Reach me at 22f3000075@ds.study.iitm.ac.in</p>
+          <p>Contact Link: <a href="mailto:22f3000075@ds.study.iitm.ac.in">22f3000075@ds.study.iitm.ac.in</a></p>
+          <p class="fragment">Press <kbd>Esc</kbd> for slide overview.</p>
+          <aside class="notes">Wrap up and move to Q&A. Remind audience about the Appendix in the repo.</aside>
+        </section>
+
+
+      <!-- Conclusion Slide -->
+      <section>
+        <h2>Conclusion</h2>
         <ul>
-          <li class="fragment fade-up">R<sub>t</sub> = Cash inflow at time t</li>
-          <li class="fragment fade-up">i = Discount rate</li>
-          <li class="fragment fade-up">T = Total periods</li>
+          <li class="fragment">Strong revenue growth</li>
+          <li class="fragment">Healthy profit margins</li>
+          <li class="fragment">Operational efficiency improved</li>
         </ul>
-        <p class="fragment fade-in">📧 22f3000075@ds.study.iitm.ac.in</p>
-      </section>
-
-      <!-- Slide 6: Closing + Thank You -->
-      <section data-markdown>
-        <script type="text/template">
-## Thank You 🙏
-
-- <span class="fragment fade-in">For questions or feedback, contact:</span>
-- <span class="fragment fade-in">📧 22f3000075@ds.study.iitm.ac.in</span>
-        </script>
+        <aside class="notes">
+          Summarize key takeaways for stakeholders.
+        </aside>
       </section>
 
     </div>
   </div>
 
-  <footer class="fragment fade-in">📧 22f3000075@ds.study.iitm.ac.in</footer>
-
-  <script src="dist/reveal.js"></script>
-  <script src="plugin/markdown/markdown.js"></script>
-  <script src="plugin/highlight/highlight.js"></script>
-  <script src="plugin/math/math.js"></script>
+  <!-- Reveal.js & Plugins -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/math/math.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
   <script>
     Reveal.initialize({
       hash: true,
       slideNumber: true,
-      transition: 'slide',
-      plugins: [RevealMarkdown, RevealHighlight, RevealMath.KaTeX]
+      plugins: [ RevealMarkdown, RevealNotes, RevealHighlight, RevealMath.KaTeX ]
+    });
+
+    // Chart.js example for Revenue & Profit
+    const ctx = document.getElementById('revenueChart').getContext('2d');
+    const revenueChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Q1', 'Q2', 'Q3', 'Q4'],
+        datasets: [
+          { label: 'Revenue ($M)', data: [3.2, 3.8, 4.5, 4.8], borderColor: 'blue', fill: false },
+          { label: 'Profit ($M)', data: [1.2, 1.5, 1.8, 2.0], borderColor: 'green', fill: false }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: 'top' },
+          title: { display: true, text: 'Revenue & Profit by Quarter' }
+        }
+      }
     });
   </script>
 </body>
+
 </html>
